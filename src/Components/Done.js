@@ -1,3 +1,4 @@
+import './Done.css';
 export const Done = ({items,handleItemMove,clickmenu,handleItemChecked,topindex,itemid,isMenuToTrashOpen}) => {
   return (
     <>
@@ -46,7 +47,7 @@ export const Done = ({items,handleItemMove,clickmenu,handleItemChecked,topindex,
              width: "240px",
              height: "48px",
              left: "56px",
-             top:`${40*topindex+498}px`,
+             top:`${40*topindex+504}px`,
  
              background: "#E4E6E7",
              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.16)",

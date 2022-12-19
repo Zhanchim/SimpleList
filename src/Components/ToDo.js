@@ -1,3 +1,4 @@
+import './ToDo.css';
 export const ToDo = ({items,handleItemMove,clickmenu,handleItemChecked,topindex,itemid,isMenuToTrashOpen}) => {
   return (
     <>
@@ -30,7 +31,8 @@ export const ToDo = ({items,handleItemMove,clickmenu,handleItemChecked,topindex,
                 border: "1.4px solid #AEAEAE",
                 borderRadius: "4px"
                 }}           
- type="checkbox" defaultChecked={item.isDone}></input><p style={{textDecoration: item.isDone ? "line-through" : "",position: "absolute",left: "50px",top: `${40*index}px`,}}>{item.name}</p></li> 
+ type="checkbox" defaultChecked={item.isDone}></input>
+ <p style={{textDecoration: item.isDone ? "line-through" : "",position: "absolute",left: "50px",top: `${40*index}px`}}>{item.name}</p></li> 
  ))} 
 </ul>
 </div>
@@ -46,7 +48,7 @@ export const ToDo = ({items,handleItemMove,clickmenu,handleItemChecked,topindex,
              width: "240px",
              height: "48px",
              left: "56px",
-             top:`${40*topindex+498}px`,
+             top:`${40*topindex+504}px`,
  
              background: "#E4E6E7",
              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.16)",
@@ -59,10 +61,8 @@ export const ToDo = ({items,handleItemMove,clickmenu,handleItemChecked,topindex,
              gap: "12px",
  
              width: "236px",
-             height: "24px"}} onClick={() => handleItemMove(itemid)}>
-      
- <img src={require("../Images/Icon.png")} alt='...'/>
- <p style={{width: "200px",
+             height: "24px"}} onClick={() => handleItemMove(itemid)}>      
+ <img src={require("../Images/Icon.png")} alt='...'/><p style={{width: "200px",
  height: "24px",
  
  /* Body S 14 pt/Medium */

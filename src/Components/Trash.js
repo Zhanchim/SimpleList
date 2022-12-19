@@ -1,3 +1,4 @@
+import './Trash.css';
 export const Trash = ({items,clickmenu,handleItemChecked,topindex,itemid,isMenuToTrashOpen,handleItemDelete,handleItemMoveBack}) => {
     return (
       <>
@@ -46,7 +47,7 @@ export const Trash = ({items,clickmenu,handleItemChecked,topindex,itemid,isMenuT
              width: "240px",
              height: "48px",
              left: "56px",
-             top:`${40*topindex+498}px`,
+             top:`${40*topindex+504}px`,
  
              background: "#E4E6E7",
              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.16)",
